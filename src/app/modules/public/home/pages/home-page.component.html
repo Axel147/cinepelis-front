@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="list-categories">
+  <h2>Peliculas</h2>
+  <div class="list-movies">
+    <div *ngFor="let movie of movies; let i = index">
+      <div class="card">
+        <button type="button" class="img-card" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse' + i" aria-expanded="false" aria-controls="collapse">
+          <img src={{movie.portada}}>
+          <p>{{movie.titulo}}</p>
+        </button>
+        <div class="desplegable-text" [attr.id]="'collapse' + i" class="collapse">
+          <div class="card card-body">
+            <p>{{movie.descripcion}}</p>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

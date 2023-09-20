@@ -1,0 +1,32 @@
+.nav-var{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.nav-var a{
+    font-size: 25px;
+    color: var(--color-3);
+    text-decoration: none;
+}
+
+.nav-var-home{
+    display: flex;
+    justify-content: center
+}
+
+.nav-var-der{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.nav-var-der a{
+    color: var(--color-4);
+}
+
+.nav-var-der a:hover{
+    color: var(--color-3);
+}

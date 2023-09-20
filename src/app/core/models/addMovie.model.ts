@@ -1,4 +1,4 @@
-export class MovieModel {
+export class AddMovieModel {
     id?: string;
     titulo!: string;
     descripcion!: string;
