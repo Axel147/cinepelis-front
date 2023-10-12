@@ -1,3 +1,7 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
 .list-categories{
     width: 100%;
     display: flex;
@@ -31,7 +35,29 @@
 .card p{
     margin: 0%;
 }
-
 p{
     color: var(--color-3);
 }
+
+/* tu-componente.component.scss */
+
+/* Cambia el color de la paginación */
+.swiper-pagination {
+    background-color: #333;
+  }
+  
+  /* Cambia el color de los botones de navegación */
+  .swiper-button-next, .swiper-button-prev {
+    background-color: #555;
+  }
+  
+  /* Cambia el color del texto de las diapositivas */
+  .swiper-slide {
+    color: #fff;
+  }
+  
+  /* Agrega un borde a las diapositivas */
+  .swiper-slide {
+    border: 1px solid #ddd;
+  }
+  
