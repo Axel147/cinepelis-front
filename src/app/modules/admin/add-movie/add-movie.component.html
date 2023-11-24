@@ -1,41 +1,54 @@
-<form (ngSubmit)="onSubmit()" [formGroup]="formulario" class="form" method="POST">
-    <label for="titulo">Título:</label>
-    <input formControlName="titulo" type="text" id="titulo" name="titulo"><br>
+<div class="contenedor">
 
-    <label for="descripcion">Descripción:</label>
-    <input formControlName="descripcion" type="text" id="descripcion" name="descripcion" rows="4" cols="50" >
-    <!--textarea id="descripcion" name="descripcion" rows="4" cols="50" value="descripcion"></textarea--><br>
-
-    <!--label for="portada">Portada:</label>
-    <input type="file" id="portada" name="portada"><br-->
-    <label for="portada">Portada:</label>
-    <input formControlName="portada" type="text" id="portada" name="portada"><br>
-
-    <label for="trailer">Trailer:</label>
-    <input formControlName="trailer" type="text" id="trailer" name="trailer"><br>
-
-    <label for="clasificacion">Clasificación:</label>
-    <input formControlName="clasificacion" type="text" id="clasificacion" name="clasificacion">
-    <!--select formControlName="clasificacion" id="clasificacion" name="clasificacion">
-        <option value="G">G</option>
-        <option value="PG">PG</option>
-        <option value="PG-13">PG-13</option>
-        <option value="R">R</option>
-        <option value="NC-17">NC-17</option>
-    </select--><br>
-
-    <label for="genero">Género:</label>
-    <input formControlName="genero" type="text" id="genero" name="genero"><br>
-
-    <label for="duracion">Duración (minutos):</label>
-    <input formControlName="duracion" type="text" id="duracion" name="duracion"><br>
-
-    <label for="elenco">Elenco:</label>
-    <input formControlName="elenco" type="text" id="elenco" name="elenco" rows="4" cols="50"><br>
-    <!--textarea id="elenco" name="elenco" rows="4" cols="50" value="elenco"></textarea-->
-
-    <label for="director">Director:</label>
-    <input formControlName="director" type="text" id="director" name="director"><br><br>
-
-    <button type="submit">Enviar</button>
-</form>
+    <form (ngSubmit)="onSubmit()" [formGroup]="formulario" class="form" method="POST">
+        <div class="item-form">
+            <label for="titulo">Título:</label>
+            <input formControlName="titulo" type="text" id="titulo" name="titulo">
+        </div>
+        <div class="item-form">
+            <label for="descripcion">Descripción:</label>
+            <input formControlName="descripcion" type="text" id="descripcion" name="descripcion" rows="4" cols="50" >
+            <!--textarea id="descripcion" name="descripcion" rows="4" cols="50" value="descripcion"></textarea-->
+        </div>
+        <div class="item-form">
+            <!--label for="portada">Portada:</label>
+            <input type="file" id="portada" name="portada"><br-->
+            <label for="portada">Portada:</label>
+            <input formControlName="portada" type="text" id="portada" name="portada">
+        </div>
+        <div class="item-form">
+            <label for="trailer">Trailer:</label>
+            <input formControlName="trailer" type="text" id="trailer" name="trailer">
+        </div>
+        <div class="item-form">
+            <label for="clasificacion">Clasificación:</label>
+            <input formControlName="clasificacion" type="text" id="clasificacion" name="clasificacion">
+            <!--select formControlName="clasificacion" id="clasificacion" name="clasificacion">
+                <option value="G">G</option>
+                <option value="PG">PG</option>
+                <option value="PG-13">PG-13</option>
+                <option value="R">R</option>
+                <option value="NC-17">NC-17</option>
+            </select-->
+        </div>
+        <div class="item-form">
+            <label for="genero">Género:</label>
+            <input formControlName="genero" type="text" id="genero" name="genero">
+        </div>
+        <div class="item-form">
+            <label for="duracion">Duración (minutos):</label>
+            <input formControlName="duracion" type="text" id="duracion" name="duracion">
+        </div>
+        <div class="item-form">
+            <label for="elenco">Elenco:</label>
+            <input formControlName="elenco" type="text" id="elenco" name="elenco" rows="4" cols="50">
+            <!--textarea id="elenco" name="elenco" rows="4" cols="50" value="elenco"></textarea-->
+        </div>
+        <div class="item-form">
+            <label for="director">Director:</label>
+            <input formControlName="director" type="text" id="director" name="director">
+        </div>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</div>

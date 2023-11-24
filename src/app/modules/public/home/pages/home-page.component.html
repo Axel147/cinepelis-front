@@ -17,55 +17,21 @@
     </div>
   </div>
 </div-->
-
-<!--segunda opcion-->
-<!--div class="list-categories">
-  <h2>Peliculas</h2>
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
+<div class="content">
+  <div class="list-categories">
+    <h2>Peliculas</h2>
+    <div class="list-movies">
       <div *ngFor="let movie of movies">
-        <div class="swiper-slide">
-          <div class="card">
-            <img src={{movie.portada}}>
-            <p>{{movie.titulo}}</p>
+        <div class="card">
+          <img class="card-img-top" src={{movie.portada}}>
+          <div class="card-body">
+            <h5 class="card-title">{{movie.titulo}}</h5>
+            <a href="#" class="btn btn-primary">Ver mas</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-    
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div-->
-
-<div class="contenedorCarrusel">
-  <swiper
-  [config]="config"
-  class="mySwiper"
-  >
-  <ng-template swiperSlide *ngFor="let movie of movies">
-    <div
-      class="card-new"
-    >
-      <div class="image-new">
-        <img [src]="movie.portada">
-      </div>
-      <div class="body-card-new">
-        <div class="content">
-          <div class="title-date">
-            <h4>
-              <strong>{{ movie.titulo | titlecase}}</strong>
-            </h4>
-          </div>
-          <div class="date">
-            <p class="text-card-new date">{{ movie.descripcion }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </ng-template>
-
-  </swiper>
+  </div>  
 </div>
+
 <app-footer></app-footer>

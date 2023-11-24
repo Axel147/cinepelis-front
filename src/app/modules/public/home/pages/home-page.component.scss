@@ -1,63 +1,36 @@
-@import 'swiper/css';
-@import 'swiper/css/navigation';
-@import 'swiper/css/pagination';
-
-.list-categories{
-    width: 100%;
+.content{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.list-categories{    
+    width: 80%;
 }
 .list-categories h2{
     color: var(--color-3);
- }
+}
 .list-movies{
     display: flex;
-    width: 80%;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    column-gap: 1%;
 }
 .card{
-    width: 190px;
-    height: 340px;
+    overflow: hidden;
+    width: 180px;
+    color: var(--color-3);
     text-align: center;
     background: none;
+    border: 0;
 }
-.img-card{
-    width: 100%;
-    height: 280px;
+.card img{ 
+    display: block;
+    align-items: center;
+    height: 250px;
 }
-.img-card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.card-title{
+    font-size: 18px;
+    text-align: center;
+    height: 40px;
 }
-.card p{
-    margin: 0%;
-}
-p{
-    color: var(--color-3);
-}
-
-/* tu-componente.component.scss */
-
-/* Cambia el color de la paginación */
-.swiper-pagination {
-    background-color: #333;
-  }
-  
-  /* Cambia el color de los botones de navegación */
-  .swiper-button-next, .swiper-button-prev {
-    background-color: #555;
-  }
-  
-  /* Cambia el color del texto de las diapositivas */
-  .swiper-slide {
-    color: #fff;
-  }
-  
-  /* Agrega un borde a las diapositivas */
-  .swiper-slide {
-    border: 1px solid #ddd;
-  }
-  
