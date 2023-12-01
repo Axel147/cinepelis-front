@@ -1,5 +1,6 @@
-<div class="contenedor">
+<h1 class="title">Cinepelis</h1>
 
+<div class="contenedor">
     <form (ngSubmit)="onSubmit()" [formGroup]="formulario" class="form" method="POST">
         <div class="item-form">
             <label for="titulo">Título:</label>
@@ -7,12 +8,12 @@
         </div>
         <div class="item-form">
             <label for="descripcion">Descripción:</label>
-            <input formControlName="descripcion" type="text" id="descripcion" name="descripcion" rows="4" cols="50" >
+            <input formControlName="descripcion" type="text" id="descripcion" name="descripcion">
             <!--textarea id="descripcion" name="descripcion" rows="4" cols="50" value="descripcion"></textarea-->
         </div>
         <div class="item-form">
             <!--label for="portada">Portada:</label>
-            <input type="file" id="portada" name="portada"><br-->
+            <input type="file" id="portada" name="portada"-->
             <label for="portada">Portada:</label>
             <input formControlName="portada" type="text" id="portada" name="portada">
         </div>
@@ -48,7 +49,8 @@
             <label for="director">Director:</label>
             <input formControlName="director" type="text" id="director" name="director">
         </div>
-        
-        <button type="submit">Enviar</button>
+        <div class="send-content">
+            <button type="submit" class="register-buttom">Registrar</button>
+        </div>
     </form>
 </div>

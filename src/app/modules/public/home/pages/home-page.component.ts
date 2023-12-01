@@ -8,7 +8,7 @@ import { MoviesService } from '@shared/services/movies/movies.service';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent {
-  title = 'frontend';
+  title = 'Cinepelis';
   movies: MovieModel[] = [];
   
   constructor(private moviesServices: MoviesService) {}
