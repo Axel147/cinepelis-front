@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AddMovieService } from './add-movie.service';
+import { CombosService } from './combos.service';
 
-describe('AddMovieService', () => {
-  let service: AddMovieService;
+describe('CombosService', () => {
+  let service: CombosService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(AddMovieService);
+    service = TestBed.inject(CombosService);
   });
 
   it('should be created', () => {
