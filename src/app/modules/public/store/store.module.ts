@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 import { StoreComponent } from './pages/store.component';
 import { SharedModule } from '@shared/shared.module';
 
-
-
 @NgModule({
   declarations: [
     StoreComponent

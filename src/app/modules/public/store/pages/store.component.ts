@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { StoreModel } from '@core/models/store.model';
+import { CombosService } from '@shared/services/combos/combos.service';
 
 @Component({
   selector: 'app-store',
@@ -9,5 +10,15 @@ import { StoreModel } from '@core/models/store.model';
 export class StoreComponent {
   combos: StoreModel[] = [];
   
-  
+  constructor(private combosServices: CombosService){ }
+
+  ngOnInit():void{
+    this.getAllCombos();
+  }
+
+  getAllCombos(){
+    this.combosServices.getCombos().subscribe(data => {
+      this.combos = data
+    },error => {console.log(error)});
+  }
 }
