@@ -4,6 +4,7 @@ import { PrincipalRoutingModule } from './principal-routing.module';
 import { AdminModule } from './admin/admin.module';
 import { HomeModule } from './public/home/home.module';
 import { PrincipalComponent } from './principal.component';
+import { StoreModule } from './public/store/store.module';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { PrincipalComponent } from './principal.component';
     AdminModule,
     CommonModule,
     HomeModule,
+    StoreModule,
     PrincipalRoutingModule
   ]
 })
