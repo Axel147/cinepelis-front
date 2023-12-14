@@ -1,0 +1,49 @@
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-categories{    
+    width: 80%;
+}
+.list-categories h2{
+    color: var(--color-3);
+}
+.list-combos{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    column-gap: 1%;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 250px;
+    color: var(--color-3);
+    text-align: center;
+    background: none;
+    border: 0; //revisar si es necesario
+
+}
+.card img{
+    display: block;
+    align-items: center;
+    height: 180px;
+}
+.card-title{
+    font-size: 18px;
+    text-align: center;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-price{
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--color-4);
+    border-radius: 0 6px 6px 0;
+    background: var(--color-4);
+}

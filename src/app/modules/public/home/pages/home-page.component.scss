@@ -33,4 +33,6 @@
     font-size: 18px;
     text-align: center;
     height: 40px;
+    overflow: hidden; /* Oculta el texto que excede el ancho establecido */
+    text-overflow: ellipsis;
 }
