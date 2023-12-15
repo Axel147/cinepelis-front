@@ -6,11 +6,13 @@ import { HomeModule } from './public/home/home.module';
 import { PrincipalComponent } from './principal.component';
 import { StoreModule } from './public/store/store.module';
 import { SharedModule } from '@shared/shared.module';
+import { CandyComponent } from './public/candy/pages/candy.component';
 
 
 @NgModule({
   declarations: [
-    PrincipalComponent
+    PrincipalComponent,
+    CandyComponent
   ],
   imports: [
     AdminModule,
@@ -18,7 +20,7 @@ import { SharedModule } from '@shared/shared.module';
     HomeModule,
     PrincipalRoutingModule,
     SharedModule,
-    StoreModule,
+    StoreModule
   ]
 })
 export class PrincipalModule { }

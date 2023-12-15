@@ -1,14 +1,14 @@
 <div class="content">
   <div class="list-categories">
-    <h2>Combos</h2>
-    <div class="list-combos">
-      <div *ngFor="let combo of combos">
+    <h2>Productos</h2>
+    <div class="list-productos">
+      <div *ngFor="let producto of productos">
         <div class="card">
           <div class="card-body">
-            <img appImgBroken class="card-img-top" src={{combo.portada}}>
-            <h5 class="card-title">{{combo.contenido}}</h5>
+            <img appImgBroken class="card-img-top" src={{producto.portada}}>
+            <h5 class="card-title">{{producto.contenido}}</h5>
           </div>
-          <a href="#" class="btn btn-primary btn-price">${{combo.precio}}</a>  
+          <a href="#" class="btn btn-primary btn-price">${{producto.precio}}</a>  
         </div>
       </div>
     </div>

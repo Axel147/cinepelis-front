@@ -1,0 +1,16 @@
+<div class="content">
+    <div class="list-categories">
+      <h2>Combos</h2>
+      <div class="list-combos">
+        <div *ngFor="let combo of combos">
+          <div class="card">
+            <div class="card-body">
+              <img appImgBroken class="card-img-top" src={{combo.portada}}>
+              <h5 class="card-title">{{combo.contenido}}</h5>
+            </div>
+            <a href="#" class="btn btn-primary btn-price">${{combo.precio}}</a>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

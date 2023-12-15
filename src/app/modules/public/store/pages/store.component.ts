@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { StoreModel } from '@core/models/store.model';
-import { CombosService } from '@shared/services/combos/combos.service';
+import { CandyService } from '@shared/services/candy/candy.service';
 
 @Component({
   selector: 'app-store',
@@ -8,17 +8,18 @@ import { CombosService } from '@shared/services/combos/combos.service';
   styleUrls: ['./store.component.scss']
 })
 export class StoreComponent {
-  combos: StoreModel[] = [];
+  productos: StoreModel[] = [];
   
-  constructor(private combosServices: CombosService){ }
+  constructor(private candyServices: CandyService){ }
 
   ngOnInit():void{
-    this.getAllCombos();
+    this.getAllProductos();
   }
 
-  getAllCombos(){
-    this.combosServices.getCombos().subscribe(data => {
-      this.combos = data
+  getAllProductos(){
+    this.candyServices.getProductos().subscribe(data => {
+      this.productos = data
     },error => {console.log(error)});
   }
+  
 }
